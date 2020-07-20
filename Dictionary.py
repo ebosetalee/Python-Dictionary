@@ -98,7 +98,7 @@ print(fruit.values())
 
 print("-" * 40)
 
-# fruit_keys = fruit.keys() creating a different value
+fruit_keys = fruit.keys() creating a different value
 print(fruit_keys)
 
 fruit["tomato"] = "not nice with ice cream"
