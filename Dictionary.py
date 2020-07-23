@@ -30,28 +30,28 @@ print(fruit)
 fruit.clear()
 print(fruit)
 
-while True:
-  dictKey = input("Please type a fruit: ")
-  if dictKey == "quit":
-    break
-  descrip = fruit.get(dictKey)
-  print(descrip) 
-# prints none if the key doesn't exist and not error
+# while True:
+#   dictKey = input("Please type a fruit: ")
+#   if dictKey == "quit":
+#     break
+#   descrip = fruit.get(dictKey)
+#   print(descrip) 
+# # prints none if the key doesn't exist and not error
 
-while True:
-  dictKey = input("Please type a fruit: ")
-  if dictKey == "quit":
-    break
-  if dictKey in fruit: #also use (in) to check if the key typed is in the dictionary
-    descrip = fruit.get(dictKey) # use .get to retrieve the dictionary
-    print(descrip)
-  else:
-     print("We don't have a " + dictKey) 
-# the alternative is to use a default value to return if the key doesnt exit, as seen below:
-#   descript = fruit.get(dictKey, "we don't have a " + dictKey) use this if the key doesnt exist
-  # there is has_key method used to check if the key is in the dictionary, seen below:
-  # fruit.has_key(dictKey) #however, it is a python 2 method not seen in python 3.
-  print(descript) 
+# while True:
+#   dictKey = input("Please type a fruit: ")
+#   if dictKey == "quit":
+#     break
+#   if dictKey in fruit: #also use (in) to check if the key typed is in the dictionary
+#     descrip = fruit.get(dictKey) # use .get to retrieve the dictionary
+#     print(descrip)
+#   else:
+#      print("We don't have a " + dictKey) 
+# # the alternative is to use a default value to return if the key doesnt exit, as seen below:
+# #   descript = fruit.get(dictKey, "we don't have a " + dictKey) use this if the key doesnt exist
+#   # there is has_key method used to check if the key is in the dictionary, seen below:
+#   # fruit.has_key(dictKey) #however, it is a python 2 method not seen in python 3.
+#   print(descript) 
 
 # Iteration (the order can change in every execution)
 for snack in fruit:
@@ -98,7 +98,7 @@ print(fruit.values())
 
 print("-" * 40)
 
-fruit_keys = fruit.keys() creating a different value
+fruit_keys = fruit.keys() # creating a different value
 print(fruit_keys)
 
 fruit["tomato"] = "not nice with ice cream"
